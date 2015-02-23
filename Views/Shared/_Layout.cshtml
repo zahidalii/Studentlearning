@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+   @* <meta http-equiv="Content-Type" content="text/cshtml; charset=iso-8859-1" />
+    <link rel="stylesheet" href="~/content/layout.css" type="text/css" />
+</head>
+<body>
+    <body id="top">
+<div class="wrapper row1">
+  <div id="header" class="clear">
+    <div class="fl_left">
+        <h1><li>@Html.ActionLink("Student learning criteria", "Index", "Home")</li></h1>
+     
+      <p>For student bright future</p>
+    </div>
+    
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper row2">
+  <div id="topnav">
+    <ul>
+        <li>@Html.ActionLink("Homepage", "Index", "Home")</li>
+        <li>@Html.ActionLink("Query discussion", "query", "Home")</li>
+        <li>@Html.ActionLink("Video lectures", "videolec", "Home")</li>
+        <li>@Html.ActionLink("download and upload lectures", "uploaddownload", "Home")</li>
+        <li>@Html.ActionLink("view result", "viewresult", "Home")</li>
+        
+
+      
+      <li><a href="#">DropDown</a>
+        <ul>
+                        <li>@Html.ActionLink("contact us", "contactus", "Home")</li>
+                        <li>@Html.ActionLink("about us", "aboutus", "Home")</li>
+        </ul>
+      </li>
+      
+    </ul>
+    <div  class="clear"></div>
+  </div>
+</div>*@
+    @RenderBody()
+        @*<div class="wrapper">
+  <div id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - ZAHID ALI</p>
+    <p class="fl_right">website Name LEARNING CRITERIA OF STUDENTS</p>
+  </div>
+</div>*@
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

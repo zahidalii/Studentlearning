@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Template Name: Education Time
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>So Long Teacher</title>
+    <meta http-equiv="Content-Type" content="text/cshtml; charset=iso-8859-1" />
+    <link rel="stylesheet" href="~/content/layout.css" type="text/css" />
+    <script type="text/javascript" src="~/Script/jquery.min.js"></script>
+    <!-- prettyPhoto -->
+    <link rel="stylesheet" href="~/content/prettyPhoto.css" type="text/css" />
+    <script type="text/javascript" src="~/Script/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a[rel^='prettyPhoto']").prettyPhoto({
+                theme: 'dark_rounded',
+                overlay_gallery: false,
+                social_tools: false
+            });
+        });
+    </script>
+    <!-- / prettyPhoto -->
+</head>
+<body id="top">
+    <div class="wrapper row1">
+        <div id="header" class="clear">
+            <div class="fl_left">
+                <h1><li>@Html.ActionLink("Student learning criteria ", "contact", "Home")</li></h1>
+                
+                <p>For student bright future</p>
+                <p><a href="/Home/index" >LOGOUT</a></p>
+            </div>
+           
+        </div>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="wrapper row2">
+        <div id="topnav">
+            <ul>
+                <li>@Html.ActionLink("Homepage", "main", "Home")</li>
+                <li>@Html.ActionLink("Query discussion", "query", "Home")</li>
+                <li>@Html.ActionLink("Video lectures", "videolec", "Home")</li>
+                <li>@Html.ActionLink("download and upload lectures", "uploaddownload", "Home")</li>
+                <li>@Html.ActionLink("view result", "viewresult", "Home")</li>
+                <li>
+                    <a href="#">DropDown</a>
+                    <ul>
+                        <li>@Html.ActionLink("contact us", "contactus", "Home")</li>
+                        <li>@Html.ActionLink("about us", "aboutus", "Home")</li>
+                    </ul>
+                </li>
+
+            </ul>
+            
+            <div class="clear"></div>
+        </div>
+        
+        <div class="">
+            <div class="clear"></div>
+            <div class="wrapper row4">
+                <div id="container" class="clear">
+                    
+                        <img src="~/images/Contact.png" alt="" height="200" width="1000" />
+                    
+                    <h1><marquee>Welcome to contact with us</marquee></h1>
+                    <h1>Email us : </h1><p> MCSF13A001@pucit.edu.pk</p>
+                    <p> Zahidalif13@gmail.com</p>
+                    <h1>Call us : </h1>
+                    <p> mob - 0313-6907834 </p>
+                    <p> 0092-42-990161201 </p>
+                    <p> 0092-42-990161201 </p>
+                    <br>
+                    <br>
+                    <br>
+                     
+                </div>
+            </div>
+        </div>
+       <div class="wrapper">
+  <div id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - ZAHID ALI</p>
+    <p class="fl_right">website Name LEARNING CRITERIA OF STUDENTS</p>
+  </div>
+</div>
+        </body>
+</html>

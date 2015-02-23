@@ -1,0 +1,78 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>So Long Teacher</title>
+    <meta http-equiv="Content-Type" content="text/cshtml; charset=iso-8859-1" />
+    <link rel="stylesheet" href="~/content/layout.css" type="text/css" />
+    <script type="text/javascript" src="~/Script/jquery.min.js"></script>
+    <!-- prettyPhoto -->
+    <link rel="stylesheet" href="~/content/prettyPhoto.css" type="text/css" />
+    <script type="text/javascript" src="~/Script/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a[rel^='prettyPhoto']").prettyPhoto({
+                theme: 'dark_rounded',
+                overlay_gallery: false,
+                social_tools: false
+            });
+        });
+    </script>
+    <!-- / prettyPhoto -->
+</head>
+<body id="top">
+    <div class="wrapper row1">
+        <div id="header" class="clear">
+            <div class="fl_left">
+                <h1><li>@Html.ActionLink("Student learning criteria ", "aboutus", "Home")</li></h1>
+                
+                <p>For student bright future</p>
+                <p><a href="/Home/index" >LOGOUT</a></p>
+            </div>
+          
+        </div>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="wrapper row2">
+        <div id="topnav">
+            <ul>
+                 <li>@Html.ActionLink("Homepage", "main", "Home")</li>
+                <li>@Html.ActionLink("Query discussion", "query", "Home")</li>
+                <li>@Html.ActionLink("Video lectures", "videolec", "Home")</li>
+                <li>@Html.ActionLink("download and upload lectures", "uploaddownload", "Home")</li>
+                <li>@Html.ActionLink("view result", "viewresult", "Home")</li>
+            
+                <li>
+                    <a href="#">DropDown</a>
+                    <ul>
+                        <li>@Html.ActionLink("contact us", "contactus", "Home")</li>
+                        <li>@Html.ActionLink("about us", "aboutus", "Home")</li>
+                    </ul>
+                </li>
+                
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="wrapper row3">
+        <div id="featured_slide">
+            <!-- ####################################################################################################### -->
+            <div class="fl_left">
+                <h2 class="title">How To Learning</h2>
+                <p>Teachers that exhibit enthusiasm can lead to students<br> who are more likely to be engaged, interested, energetic, and curious about learning<br> the subject matter.<br> Recent research has found a correlation between teacher<br> enthusiasm and students' intrinsic motivation to learn<br> and vitality in the classroom.[7] Controlled, experimental <br> studies exploring intrinsic motivation of college students has shown <br> that nonverbal expressions of enthusiasm,<br> such as demonstrative gesturing, dramatic movements<br> which are varied, and emotional facial expressions, <br>result in college students reporting higher levels of intrinsic motivation to learn.<br> Students who experienced a very enthusiastic teacher were more likely to read lecture material <br>outside of the classroom.</p><br>
+              <br>
+                <br>
+                <br>
+                <br>
+            <div class="wrapper">
+  <div id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - ZAHID ALI</p>
+    <p class="fl_right">website Name LEARNING CRITERIA OF STUDENTS</p>
+  </div>
+</div>
+            </div>
+            <div class="fl_right">
+            </div>
+            
+            
+</body>
+</html>

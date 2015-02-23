@@ -1,0 +1,15 @@
+﻿@model MvcApp.Models.student
+
+@{
+    ViewBag.Title = "update";
+}
+
+<h2>update</h2>
+<form action ="/home/updateconfirm/@Model.sid" method="post">
+    Name<input type="text" value="@Model.Name" name="t1" />
+    city<input type="text" value="@Model.city" name="t2" />
+    msg<input type="text" value="@Model.msg" name="t3" />
+    <input type ="submit" value="update student" />
+
+
+</form>

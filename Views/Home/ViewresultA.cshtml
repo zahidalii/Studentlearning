@@ -1,0 +1,117 @@
+ <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Education Time | Gallery</title>
+<meta http-equiv="Content-Type" content="text/cshtml; charset=iso-8859-1" />
+<link rel="stylesheet" href="~/content/layout.css" type="text/css" />
+<script type="text/javascript" src="~/Script/jquery.min.js"></script>
+<!-- prettyPhoto -->
+<link rel="stylesheet" href="~/content/prettyPhoto.css" type="text/css" />
+<script type="text/javascript" src="~/Script/jquery.prettyPhoto.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("a[rel^='prettyPhoto']").prettyPhoto({
+            theme: 'dark_rounded',
+            overlay_gallery: false,
+            social_tools: false
+        });
+    });
+</script>
+<!-- / prettyPhoto -->
+</head>
+<body id="top">
+<div class="wrapper row1">
+  <div id="header" class="clear">
+    <div class="fl_left">
+        <h1><li>@Html.ActionLink("Student learning criteria", "viewresultA", "Home")</li></h1>
+    
+      <p>For student bright future</p>
+        <p><a href="/Home/index" >LOGOUT</a></p>
+    </div>
+      </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper row2">
+  <div id="topnav">
+    <ul>
+       <li>@Html.ActionLink("Homepage", "main", "Home")</li>
+        <li>@Html.ActionLink("Query discussion", "query", "Home")</li>
+        <li>@Html.ActionLink("Video lectures", "videolec", "Home")</li>
+        <li>@Html.ActionLink("download and upload lectures", "uploaddownload", "Home")</li>
+        <li>@Html.ActionLink("view result", "viewresult", "Home")</li>
+
+    
+      <li><a href="#">DropDown</a>
+        <ul>
+                        <li>@Html.ActionLink("contact us", "contactus", "Home")</li>
+                        <li>@Html.ActionLink("about us", "aboutus", "Home")</li>
+        </ul>
+      </li>
+     
+    </ul>
+    <div  class="clear"></div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper row4">
+  <div id="container" class="clear"> 
+    <!-- ####################################################################################################### -->
+      <br>
+      <br>
+      <br>
+      <h1><marquee>Your Detailed result of book A is here below </marquee></h1>
+      <br>
+      <br>
+      <table border ="8" style="animation" bgcolor="beige">
+	  <tr>
+	  <th>Sessional</th>
+	  <th>Mids</th>
+	  <th>Final</th>
+	  <th>Total</th>
+	  </tr>
+	  <tr>
+	  <td width= "100" height= "100"> 20 </td>
+	  <td width= "100" height= "100"> 31</td>
+	  <td width= "100" height= "100"> 36 </td>
+	  <td width= "100" height= "100"> 87</td>
+	  </tr>
+	  </table>
+      <br>
+      <br>
+      <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+      <br>
+
+
+            
+          
+      <!-- ########### -->
+      <div class="gallerycontainer clear">
+        <div class="fl_left">
+          
+        </div>
+        <div class="fl_right">
+         
+        </div>
+      </div>
+      <!-- ########### --> 
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="pagination">
+     
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - ZAHID ALI</p>
+    <p class="fl_right">website Name LEARNING CRITERIA OF STUDENTS</p>
+  </div>
+</div>
+</body>
+</html>
